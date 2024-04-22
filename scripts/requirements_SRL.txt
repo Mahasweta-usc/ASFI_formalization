@@ -1,8 +1,0 @@
-allennlp
-allennlp-models
-urllib3
-tbb
-stanza
-jsonlines
-jiwer
-spacy[transformers]

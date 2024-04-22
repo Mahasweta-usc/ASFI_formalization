@@ -4,7 +4,7 @@ NLP pipeline for ["Do We Run How We Say We Run? Formalization and Practice of Go
 
 ## Data
 
-Repo contains [policy data](./policies.csv) for testing basic text2rule (SRL) parsing code. Full data [Emails, Policies, Analysis] from the paper can be downloaded here.   
+Repo contains [policy data](./data/policies.csvpolicies.csv) for testing basic text2rule (SRL) parsing code. Full data [Emails, Policies, Analysis] from the paper can be downloaded here.   
 
 [Data Processing Pipeline](./CHI_flow.jpg)
 
@@ -15,7 +15,7 @@ Scripts:
 	-- email_filtering: filtering emails for reporting reminders and JIRA/Github notifications
 	-- srl_parsing: parsing activities/rules from email [column: 'reply'] and policies [column: 'policy.statement']
 	-- dev_speak: remove logs/traces and other non-english dialogue
-	-- internalization_scoring: calculate semantic similarity between rules and routine activities
+	-- internalization_scoring: calculate semantic similarity between rules and routine activitieshttps://umap-learn.readthedocs.io/en/latest/reproducibility.html
 	-- final_analysis: statistical inference on governance measurements
 ```
 
