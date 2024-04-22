@@ -12,15 +12,21 @@ Repo contains [policy data](./data/policies.csv) for testing basic text2rule (SR
 
 Scripts: 
 ```
+- Preprocessing
 	-- email_filtering: filtering emails for reporting reminders and JIRA/Github notifications
 	-- srl_parsing: parsing activities/rules from email [column: 'reply'] and policies [column: 'policy.statement']
 	-- dev_speak: remove logs/traces and other non-english dialogue
+
+- Measurements
 	-- internalization_scoring: calculate semantic similarity between rules and routine activities
+
+- Analysis
 	-- final_analysis: statistical inference on governance measurements
 ```
 
 Notebooks: 
 ```
+- Topic Modeling/Analysis
 	-- cluster_tuning: Select best clustering model
 	-- topic_prediction: Predict topics for all governed activities
 ```

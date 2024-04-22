@@ -1,4 +1,4 @@
-#R2 (Tjur) is not supported by statsmodel and was calculated/reported separately using R
+#R2 (Tjur) and AIC is not supported by statsmodel and was calculated/reported separately using R
 
 #topics maps for primary analysis
 topic_assigned = {'0_release_releases_version' : 'Release Management',
