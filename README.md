@@ -6,7 +6,7 @@ NLP pipeline for ["Do We Run How We Say We Run? Formalization and Practice of Go
 
 Repo contains [policy data](./data/policies.csv) for testing basic text2rule (SRL) parsing code. Full data [Emails, Policies, Analysis] from the paper can be downloaded here.   
 
-[Data Processing Pipeline](./CHI_flow.jpg)
+![Data Processing Pipeline](./data/CHI_flow.jpg)
 
 ## Organization
 
@@ -15,7 +15,7 @@ Scripts:
 	-- email_filtering: filtering emails for reporting reminders and JIRA/Github notifications
 	-- srl_parsing: parsing activities/rules from email [column: 'reply'] and policies [column: 'policy.statement']
 	-- dev_speak: remove logs/traces and other non-english dialogue
-	-- internalization_scoring: calculate semantic similarity between rules and routine activitieshttps://umap-learn.readthedocs.io/en/latest/reproducibility.html
+	-- internalization_scoring: calculate semantic similarity between rules and routine activities
 	-- final_analysis: statistical inference on governance measurements
 ```
 
@@ -30,7 +30,7 @@ Experiments were conducted on older versions of AllenNLP/AllenNLP-models no long
 
 Topic models, even LDA, induce a small degree of stochasticity in labels/assignments. These resources help limit randomness in topic modeling: <br/> 
 * [Reproducing deep models with Pytorch](https://pytorch.org/docs/stable/notes/randomness.html) <br/>
-* [BERTopic](https://maartengr.github.io/BERTopic/faq.html#why-are-the-results-not-consistent-between-runs) and [UMAP)](https://umap-learn.readthedocs.io/en/latest/reproducibility.html) 
+* [BERTopic](https://maartengr.github.io/BERTopic/faq.html#why-are-the-results-not-consistent-between-runs) and [UMAP](https://umap-learn.readthedocs.io/en/latest/reproducibility.html) 
 
 AllenNLP is now in maintenance mode only. Check here for forks: <br/>
 * [AllenNLP](https://github.com/Mahasweta-usc/allennlp) <br/>
