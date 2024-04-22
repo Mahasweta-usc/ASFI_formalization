@@ -10,21 +10,21 @@ Data [Emails, Policies, Analysis] can be downloaded here
 
 Scripts: 
 ```
-	*email_filtering*: filtering emails for reporting reminders and JIRA/Github notifications
-	*srl_parsing*: parsing activities/rules from email [column: 'reply'] and policies [column: 'policy.statement']
-	*dev_speak*: remove logs/traces and other non-english dialogue
-	*internalization_scoring*: calculate semantic similarity between rules and routine activities
+	**email_filtering**: filtering emails for reporting reminders and JIRA/Github notifications
+	**srl_parsing**: parsing activities/rules from email [column: 'reply'] and policies [column: 'policy.statement']
+	**dev_speak**: remove logs/traces and other non-english dialogue
+	**internalization_scoring**: calculate semantic similarity between rules and routine activities
 ```
 
 Notebooks: 
 ```
-	*cluster_tuning*: Select best clustering model
-	*topic_prediction*: Predict topics for all governed activities
+	**cluster_tuning**: Select best clustering model
+	**topic_prediction**: Predict topics for all governed activities
 ```
 ## Reproduction 
 
 Experiments were conducted on older versions of AllenNLP/AllenNLP-models no longer compatible with Colab. Repo has been updated to 2.10.1. Minor differences in parsing may be observed due to version differences.
 
-AllenNLP is now in maintenance mode only. Check here for forks:
-*** [AllenNLP](https://github.com/Mahasweta-usc/allennlp)
-*** [ALlenNLP-models](https://github.com/Mahasweta-usc/allennlp-models)
+AllenNLP is now in maintenance mode only. Check here for forks: <br/>
+* [AllenNLP](https://github.com/Mahasweta-usc/allennlp) <br/>
+* [ALlenNLP-models](https://github.com/Mahasweta-usc/allennlp-models)
