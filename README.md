@@ -4,7 +4,7 @@ NLP pipeline for ["Do We Run How We Say We Run? Formalization and Practice of Go
 
 ## Data
 
-Repo contains [policy data](./data/policies.csvpolicies.csv) for testing basic text2rule (SRL) parsing code. Full data [Emails, Policies, Analysis] from the paper can be downloaded here.   
+Repo contains [policy data](./data/policies.csv) for testing basic text2rule (SRL) parsing code. Full data [Emails, Policies, Analysis] from the paper can be downloaded here.   
 
 [Data Processing Pipeline](./CHI_flow.jpg)
 
