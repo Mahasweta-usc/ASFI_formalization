@@ -1,7 +1,0 @@
-bertopic==0.14.1
-joblib==1.1.0
-tbb
-stanza==1.4.0
-jsonlines
-jiwer==2.2.1
-spacy[transformers]

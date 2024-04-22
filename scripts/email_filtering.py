@@ -13,7 +13,7 @@ recurring = ['@git.apache.org','jira@apache.org','noreply@github.com','notificat
 
 
 
-all_data = pd.read_csv('email_data.csv')
+all_data = pd.read_csv('all_activities.csv')
 org_columns = ['message_id','body','month']
 
 projects = all_data['project_name'].unique(); print(len(projects))

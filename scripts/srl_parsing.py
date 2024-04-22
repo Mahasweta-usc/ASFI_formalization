@@ -173,18 +173,16 @@ def create_clauses(x):
   return all_clauses
 
 # Generate rules from policies
-data = pd.read_csv("policies.csv");print(data.columns)
+data = pd.read_csv("policies_post_hoc.csv");print(data.columns)
 
-data['sentences'] = data['policy.statement'].apply(lambda x : [sentence.text for sentence in nlp(x).sentences])
+data['sentences'] = data['policy.statement'].apply(lambda x : [sentence.text for sentence in nlp(x).sentences]) ##for email data, use 'reply' column
 data['srl_ip'] = data['sentences'].apply(lambda x : [{'sentence' : elem} for elem in x])
 data['srl_parsed'] = data['srl_ip'].apply(lambda x: srl_arg(x))
 data['parsed_clauses'] = data.apply(lambda x : create_clauses(x),axis=1)
-data.to_csv('asf_rules.csv')
 
-rules_data = pd.read_csv('asf_rules.csv')
-rules_data['parsed_clauses'] = rules_data['parsed_clauses'].apply(lambda x: ast.literal_eval(x))
+rules_data = data.copy()
 rules_data['label'] = rules_data.index.tolist()
 rules_data = rules_data.explode('parsed_clauses')
 rules_data.dropna(inplace=True);print('Number of parsed rules/clauses: ', rules_data.shape[0])
-rules = rules_data['parsed_clauses'].tolist()
-rules = list(map(lambda x : process_(x),rules))
+rules_data['rules'] = rules_data['parsed_clauses'].apply(lambda x : process_(x))
+rules_data.to_csv('asf_rules.csv',index=False) #save emails to all_activities.csv
