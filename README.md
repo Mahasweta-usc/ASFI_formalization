@@ -4,7 +4,7 @@ NLP pipeline for ["Do We Run How We Say We Run? Formalization and Practice of Go
 
 ## Data
 
-Repo contains [policy data](./data/policies.csv) for testing basic text2rule (SRL) parsing code. Full data [Emails, Policies, Analysis] from the paper can be downloaded here.   
+Repo contains [policy data](./data/policies.csv) for testing basic text2rule (SRL) parsing code. Full data [Emails, Policies, Analysis] from the paper can be downloaded [here](https://storage.googleapis.com/public_data_c2/CHI_zenodo/CHI_zenodo.zip).   
 
 ![Data Processing Pipeline](./data/CHI_flow.jpg)
 
@@ -32,11 +32,11 @@ Notebooks:
 ```
 ## Reproduction 
 
-Experiments were conducted on older versions of AllenNLP/AllenNLP-models no longer compatible with Colab. Repo has been updated to 2.10.1. Minor differences in parsing may be observed across versions.
-
-Topic models, even LDA, induce a small degree of stochasticity in labels/assignments. These resources help limit randomness in topic modeling: <br/> 
+Topic models, even classics like LDA, induce a small degree of stochasticity in labels/assignments. These resources help limit randomness in topic modeling: <br/> 
 * [Reproducing deep models with Pytorch](https://pytorch.org/docs/stable/notes/randomness.html) <br/>
 * [BERTopic](https://maartengr.github.io/BERTopic/faq.html#why-are-the-results-not-consistent-between-runs) and [UMAP](https://umap-learn.readthedocs.io/en/latest/reproducibility.html) 
+
+Experiments were conducted on older versions of AllenNLP/AllenNLP-models no longer compatible with Colab. Repo has been updated to 2.10.1. Minor differences in parsing may be observed across versions.
 
 AllenNLP is now in maintenance mode only. Check here for forks: <br/>
 * [AllenNLP](https://github.com/Mahasweta-usc/allennlp) <br/>
