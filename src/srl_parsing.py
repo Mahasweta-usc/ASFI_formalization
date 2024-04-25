@@ -173,7 +173,7 @@ def create_clauses(x):
   return all_clauses
 
 # Generate rules from policies
-data = pd.read_csv("policies_post_hoc.csv");print(data.columns)
+data = pd.read_csv("policies.csv");print(data.columns)
 
 data['sentences'] = data['policy.statement'].apply(lambda x : [sentence.text for sentence in nlp(x).sentences]) ##for email data, use 'reply' column
 data['srl_ip'] = data['sentences'].apply(lambda x : [{'sentence' : elem} for elem in x])
